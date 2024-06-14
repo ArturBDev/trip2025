@@ -57,22 +57,22 @@ export default function Home() {
 
   return (
     <main>
-      <div className="absolute inset-0 flex items-center justify-center z-10 gap-4">
-        <div className="bg-blue-500 rounded-lg shadow-lg p-16 text-center text-white transform hover:scale-105 transition-transform duration-200">
-          <h2 className="text-4xl">{timeUntilTrip.days}</h2>
-          <p className="text-2xl">Dias</p>
+      <div className="absolute inset-0 flex flex-col sm:flex-row items-center justify-center z-10 gap-4 p-4">
+        <div className="bg-blue-500 rounded-lg shadow-lg p-4 sm:p-16 text-center text-white transform hover:scale-105 transition-transform duration-200">
+          <h2 className="text-2xl sm:text-4xl">{timeUntilTrip.days}</h2>
+          <p className="text-xl sm:text-2xl">Dias</p>
         </div>
-        <div className="bg-blue-500 rounded-lg shadow-lg p-16 text-center text-white transform hover:scale-105 transition-transform duration-200">
-          <h2 className="text-4xl">{timeUntilTrip.hours}</h2>
-          <p className="text-2xl">Horas</p>
+        <div className="bg-blue-500 rounded-lg shadow-lg p-4 sm:p-16 text-center text-white transform hover:scale-105 transition-transform duration-200">
+          <h2 className="text-2xl sm:text-4xl">{timeUntilTrip.hours}</h2>
+          <p className="text-xl sm:text-2xl">Horas</p>
         </div>
-        <div className="bg-blue-500 rounded-lg shadow-lg p-16 text-center text-white transform hover:scale-105 transition-transform duration-200">
-          <h2 className="text-4xl">{timeUntilTrip.minutes}</h2>
-          <p className="text-2xl">Minutos</p>
+        <div className="bg-blue-500 rounded-lg shadow-lg p-4 sm:p-16 text-center text-white transform hover:scale-105 transition-transform duration-200">
+          <h2 className="text-2xl sm:text-4xl">{timeUntilTrip.minutes}</h2>
+          <p className="text-xl sm:text-2xl">Minutos</p>
         </div>
-        <div className="bg-blue-500 rounded-lg shadow-lg p-16 text-center text-white transform hover:scale-105 transition-transform duration-200">
-          <h2 className="text-4xl">{timeUntilTrip.seconds}</h2>
-          <p className="text-2xl">Segundos</p>
+        <div className="bg-blue-500 rounded-lg shadow-lg p-4 sm:p-16 text-center text-white transform hover:scale-105 transition-transform duration-200">
+          <h2 className="text-2xl sm:text-4xl">{timeUntilTrip.seconds}</h2>
+          <p className="text-xl sm:text-2xl">Segundos</p>
         </div>
       </div>
       {images.map((image, index) => (
@@ -82,7 +82,7 @@ export default function Home() {
             index === currentIndex ? "opacity-100" : "opacity-0"
           } w-full h-screen`}
         >
-          <h1 className="text-4xl text-center p-4">
+          <h1 className="text-2xl sm:text-4xl text-center p-4">
             Contador para a melhor viagem de todas
           </h1>
           <Image
